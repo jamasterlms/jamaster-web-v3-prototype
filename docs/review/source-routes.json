@@ -1,0 +1,1283 @@
+{
+  "repository": "jamasterlms/jamaster-web",
+  "commit": "7810bd1720c57749f6d5249536ba015f2a53694f",
+  "scope": "Route coverage only; no claim of service, field or device acceptance",
+  "routes": [
+    {
+      "pattern": "/admin/activities/[id]",
+      "sourceFile": "app/[locale]/(main)/admin/activities/[id]/page.tsx",
+      "samplePath": "/admin/activities/activity-demo",
+      "redirect": null,
+      "expectedComponent": "ActivitiesPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/activities/[id]/submissions",
+      "sourceFile": "app/[locale]/(main)/admin/activities/[id]/submissions/page.tsx",
+      "samplePath": "/admin/activities/activity-demo/submissions",
+      "redirect": null,
+      "expectedComponent": "ActivitiesPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/activities",
+      "sourceFile": "app/[locale]/(main)/admin/activities/page.tsx",
+      "samplePath": "/admin/activities",
+      "redirect": null,
+      "expectedComponent": "ActivitiesPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/announcements",
+      "sourceFile": "app/[locale]/(main)/admin/announcements/page.tsx",
+      "samplePath": "/admin/announcements",
+      "redirect": null,
+      "expectedComponent": "AnnouncementsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/automations/[id]",
+      "sourceFile": "app/[locale]/(main)/admin/automations/[id]/page.tsx",
+      "samplePath": "/admin/automations/a1",
+      "redirect": null,
+      "expectedComponent": "AutomationsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/automations/create",
+      "sourceFile": "app/[locale]/(main)/admin/automations/create/page.tsx",
+      "samplePath": "/admin/automations/create",
+      "redirect": null,
+      "expectedComponent": "AutomationsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/automations",
+      "sourceFile": "app/[locale]/(main)/admin/automations/page.tsx",
+      "samplePath": "/admin/automations",
+      "redirect": null,
+      "expectedComponent": "AutomationsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/calendar",
+      "sourceFile": "app/[locale]/(main)/admin/calendar/page.tsx",
+      "samplePath": "/admin/calendar",
+      "redirect": null,
+      "expectedComponent": "CalendarPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/calendar/pollings",
+      "sourceFile": "app/[locale]/(main)/admin/calendar/pollings/page.tsx",
+      "samplePath": "/admin/calendar/pollings",
+      "redirect": null,
+      "expectedComponent": "CalendarPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/contracts/form",
+      "sourceFile": "app/[locale]/(main)/admin/contracts/form/page.tsx",
+      "samplePath": "/admin/contracts/form",
+      "redirect": null,
+      "expectedComponent": "ContractsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/contracts",
+      "sourceFile": "app/[locale]/(main)/admin/contracts/page.tsx",
+      "samplePath": "/admin/contracts",
+      "redirect": null,
+      "expectedComponent": "ContractsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/curriculum-units",
+      "sourceFile": "app/[locale]/(main)/admin/curriculum-units/page.tsx",
+      "samplePath": "/admin/curriculum-units",
+      "redirect": null,
+      "expectedComponent": "LearningPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/dashboard",
+      "sourceFile": "app/[locale]/(main)/admin/dashboard/page.tsx",
+      "samplePath": "/admin/dashboard",
+      "redirect": null,
+      "expectedComponent": "DashboardPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/education-reports/[reportKey]",
+      "sourceFile": "app/[locale]/(main)/admin/education-reports/[reportKey]/page.tsx",
+      "samplePath": "/admin/education-reports/active-students",
+      "redirect": null,
+      "expectedComponent": "EducationDetailPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/education-reports",
+      "sourceFile": "app/[locale]/(main)/admin/education-reports/page.tsx",
+      "samplePath": "/admin/education-reports",
+      "redirect": null,
+      "expectedComponent": "ReportsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/education",
+      "sourceFile": "app/[locale]/(main)/admin/education/page.tsx",
+      "samplePath": "/admin/education",
+      "redirect": null,
+      "expectedComponent": "LearningPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/education/period",
+      "sourceFile": "app/[locale]/(main)/admin/education/period/page.tsx",
+      "samplePath": "/admin/education/period",
+      "redirect": null,
+      "expectedComponent": "LearningPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/email/[emailId]",
+      "sourceFile": "app/[locale]/(main)/admin/email/[emailId]/page.tsx",
+      "samplePath": "/admin/email/m2",
+      "redirect": null,
+      "expectedComponent": "CommunicationsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/email/create",
+      "sourceFile": "app/[locale]/(main)/admin/email/create/page.tsx",
+      "samplePath": "/admin/email/create",
+      "redirect": null,
+      "expectedComponent": "CommunicationsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/email",
+      "sourceFile": "app/[locale]/(main)/admin/email/page.tsx",
+      "samplePath": "/admin/email",
+      "redirect": null,
+      "expectedComponent": "CommunicationsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/email/templates/create",
+      "sourceFile": "app/[locale]/(main)/admin/email/templates/create/page.tsx",
+      "samplePath": "/admin/email/templates/create",
+      "redirect": null,
+      "expectedComponent": "CommunicationsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/email/templates",
+      "sourceFile": "app/[locale]/(main)/admin/email/templates/page.tsx",
+      "samplePath": "/admin/email/templates",
+      "redirect": null,
+      "expectedComponent": "CommunicationsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/expenses/form",
+      "sourceFile": "app/[locale]/(main)/admin/expenses/form/page.tsx",
+      "samplePath": "/admin/expenses/form",
+      "redirect": null,
+      "expectedComponent": "ExpensesPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/expenses",
+      "sourceFile": "app/[locale]/(main)/admin/expenses/page.tsx",
+      "samplePath": "/admin/expenses",
+      "redirect": null,
+      "expectedComponent": "ExpensesPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/groups/[groupId]/notes",
+      "sourceFile": "app/[locale]/(main)/admin/groups/[groupId]/notes/page.tsx",
+      "samplePath": "/admin/groups/g1/notes",
+      "redirect": null,
+      "expectedComponent": "GroupNotesPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/groups/[groupId]",
+      "sourceFile": "app/[locale]/(main)/admin/groups/[groupId]/page.tsx",
+      "samplePath": "/admin/groups/g1",
+      "redirect": null,
+      "expectedComponent": "GroupsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/groups/[groupId]/polling",
+      "sourceFile": "app/[locale]/(main)/admin/groups/[groupId]/polling/page.tsx",
+      "samplePath": "/admin/groups/g1/polling",
+      "redirect": null,
+      "expectedComponent": "AttendancePage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/groups/[groupId]/schedule/create",
+      "sourceFile": "app/[locale]/(main)/admin/groups/[groupId]/schedule/create/page.tsx",
+      "samplePath": "/admin/groups/g1/schedule/create",
+      "redirect": null,
+      "expectedComponent": "BatchSchedulePage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/groups/[groupId]/schedule",
+      "sourceFile": "app/[locale]/(main)/admin/groups/[groupId]/schedule/page.tsx",
+      "samplePath": "/admin/groups/g1/schedule",
+      "redirect": null,
+      "expectedComponent": "CalendarPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/groups/[groupId]/teacher",
+      "sourceFile": "app/[locale]/(main)/admin/groups/[groupId]/teacher/page.tsx",
+      "samplePath": "/admin/groups/g1/teacher",
+      "redirect": null,
+      "expectedComponent": "GroupTeachersPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/groups/form",
+      "sourceFile": "app/[locale]/(main)/admin/groups/form/page.tsx",
+      "samplePath": "/admin/groups/form",
+      "redirect": null,
+      "expectedComponent": "GroupsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/groups",
+      "sourceFile": "app/[locale]/(main)/admin/groups/page.tsx",
+      "samplePath": "/admin/groups",
+      "redirect": null,
+      "expectedComponent": "GroupsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin",
+      "sourceFile": "app/[locale]/(main)/admin/page.tsx",
+      "samplePath": "/admin",
+      "redirect": "/admin/dashboard",
+      "expectedComponent": "DashboardPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/payments/checkout",
+      "sourceFile": "app/[locale]/(main)/admin/payments/checkout/page.tsx",
+      "samplePath": "/admin/payments/checkout",
+      "redirect": "/payment",
+      "expectedComponent": "AccessPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/payments/installments",
+      "sourceFile": "app/[locale]/(main)/admin/payments/installments/page.tsx",
+      "samplePath": "/admin/payments/installments",
+      "redirect": null,
+      "expectedComponent": "LedgerPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/payments",
+      "sourceFile": "app/[locale]/(main)/admin/payments/page.tsx",
+      "samplePath": "/admin/payments",
+      "redirect": "/payment",
+      "expectedComponent": "AccessPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/pricing/create",
+      "sourceFile": "app/[locale]/(main)/admin/pricing/create/page.tsx",
+      "samplePath": "/admin/pricing/create",
+      "redirect": null,
+      "expectedComponent": "PricingPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/pricing",
+      "sourceFile": "app/[locale]/(main)/admin/pricing/page.tsx",
+      "samplePath": "/admin/pricing",
+      "redirect": null,
+      "expectedComponent": "PricingPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/program-terms",
+      "sourceFile": "app/[locale]/(main)/admin/program-terms/page.tsx",
+      "samplePath": "/admin/program-terms",
+      "redirect": null,
+      "expectedComponent": "LearningPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/programs",
+      "sourceFile": "app/[locale]/(main)/admin/programs/page.tsx",
+      "samplePath": "/admin/programs",
+      "redirect": null,
+      "expectedComponent": "ProgramsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/reports/[reportKey]",
+      "sourceFile": "app/[locale]/(main)/admin/reports/[reportKey]/page.tsx",
+      "samplePath": "/admin/reports/sales-by-advisor",
+      "redirect": null,
+      "expectedComponent": "LeafReportPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/reports/accounting",
+      "sourceFile": "app/[locale]/(main)/admin/reports/accounting/page.tsx",
+      "samplePath": "/admin/reports/accounting",
+      "redirect": null,
+      "expectedComponent": "PrimaryReportPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/reports/bills",
+      "sourceFile": "app/[locale]/(main)/admin/reports/bills/page.tsx",
+      "samplePath": "/admin/reports/bills",
+      "redirect": null,
+      "expectedComponent": "PrimaryReportPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/reports/collections",
+      "sourceFile": "app/[locale]/(main)/admin/reports/collections/page.tsx",
+      "samplePath": "/admin/reports/collections",
+      "redirect": null,
+      "expectedComponent": "PrimaryReportPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/reports/meetings",
+      "sourceFile": "app/[locale]/(main)/admin/reports/meetings/page.tsx",
+      "samplePath": "/admin/reports/meetings",
+      "redirect": null,
+      "expectedComponent": "MeetingsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/reports/overdue-receivables",
+      "sourceFile": "app/[locale]/(main)/admin/reports/overdue-receivables/page.tsx",
+      "samplePath": "/admin/reports/overdue-receivables",
+      "redirect": null,
+      "expectedComponent": "PrimaryReportPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/reports",
+      "sourceFile": "app/[locale]/(main)/admin/reports/page.tsx",
+      "samplePath": "/admin/reports",
+      "redirect": null,
+      "expectedComponent": "ReportsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/reports/sales",
+      "sourceFile": "app/[locale]/(main)/admin/reports/sales/page.tsx",
+      "samplePath": "/admin/reports/sales",
+      "redirect": null,
+      "expectedComponent": "PrimaryReportPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/sales/[studentId]",
+      "sourceFile": "app/[locale]/(main)/admin/sales/[studentId]/page.tsx",
+      "samplePath": "/admin/sales/1088",
+      "redirect": null,
+      "expectedComponent": "SalePage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/settings/bank",
+      "sourceFile": "app/[locale]/(main)/admin/settings/bank/page.tsx",
+      "samplePath": "/admin/settings/bank",
+      "redirect": null,
+      "expectedComponent": "SettingsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/settings/email",
+      "sourceFile": "app/[locale]/(main)/admin/settings/email/page.tsx",
+      "samplePath": "/admin/settings/email",
+      "redirect": null,
+      "expectedComponent": "SettingsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/settings/general",
+      "sourceFile": "app/[locale]/(main)/admin/settings/general/page.tsx",
+      "samplePath": "/admin/settings/general",
+      "redirect": null,
+      "expectedComponent": "SettingsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/settings/integrations",
+      "sourceFile": "app/[locale]/(main)/admin/settings/integrations/page.tsx",
+      "samplePath": "/admin/settings/integrations",
+      "redirect": null,
+      "expectedComponent": "SettingsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/settings",
+      "sourceFile": "app/[locale]/(main)/admin/settings/page.tsx",
+      "samplePath": "/admin/settings",
+      "redirect": "/admin/settings/general",
+      "expectedComponent": "SettingsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/settings/payment",
+      "sourceFile": "app/[locale]/(main)/admin/settings/payment/page.tsx",
+      "samplePath": "/admin/settings/payment",
+      "redirect": null,
+      "expectedComponent": "SettingsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/settings/sms",
+      "sourceFile": "app/[locale]/(main)/admin/settings/sms/page.tsx",
+      "samplePath": "/admin/settings/sms",
+      "redirect": null,
+      "expectedComponent": "SettingsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/settings/whatsapp",
+      "sourceFile": "app/[locale]/(main)/admin/settings/whatsapp/page.tsx",
+      "samplePath": "/admin/settings/whatsapp",
+      "redirect": null,
+      "expectedComponent": "SettingsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/sms/[smsId]",
+      "sourceFile": "app/[locale]/(main)/admin/sms/[smsId]/page.tsx",
+      "samplePath": "/admin/sms/m1",
+      "redirect": null,
+      "expectedComponent": "CommunicationsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/sms/create",
+      "sourceFile": "app/[locale]/(main)/admin/sms/create/page.tsx",
+      "samplePath": "/admin/sms/create",
+      "redirect": null,
+      "expectedComponent": "CommunicationsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/sms",
+      "sourceFile": "app/[locale]/(main)/admin/sms/page.tsx",
+      "samplePath": "/admin/sms",
+      "redirect": null,
+      "expectedComponent": "CommunicationsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/sms/templates",
+      "sourceFile": "app/[locale]/(main)/admin/sms/templates/page.tsx",
+      "samplePath": "/admin/sms/templates",
+      "redirect": null,
+      "expectedComponent": "CommunicationsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/staff/[id]",
+      "sourceFile": "app/[locale]/(main)/admin/staff/[id]/page.tsx",
+      "samplePath": "/admin/staff/staff-1",
+      "redirect": null,
+      "expectedComponent": "TeamPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/staff/form",
+      "sourceFile": "app/[locale]/(main)/admin/staff/form/page.tsx",
+      "samplePath": "/admin/staff/form",
+      "redirect": null,
+      "expectedComponent": "TeamPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/staff",
+      "sourceFile": "app/[locale]/(main)/admin/staff/page.tsx",
+      "samplePath": "/admin/staff",
+      "redirect": null,
+      "expectedComponent": "TeamPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/staff/salary",
+      "sourceFile": "app/[locale]/(main)/admin/staff/salary/page.tsx",
+      "samplePath": "/admin/staff/salary",
+      "redirect": null,
+      "expectedComponent": "PayrollPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]/activities",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/activities/page.tsx",
+      "samplePath": "/admin/students/1088/activities",
+      "redirect": null,
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]/documents",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/documents/page.tsx",
+      "samplePath": "/admin/students/1088/documents",
+      "redirect": null,
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]/email-history",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/email-history/page.tsx",
+      "samplePath": "/admin/students/1088/email-history",
+      "redirect": "/admin/students/1088/history?tab=email",
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]/group",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/group/page.tsx",
+      "samplePath": "/admin/students/1088/group",
+      "redirect": "/admin/students/1088/groups",
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]/groups",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/groups/page.tsx",
+      "samplePath": "/admin/students/1088/groups",
+      "redirect": null,
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]/history",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/history/page.tsx",
+      "samplePath": "/admin/students/1088/history",
+      "redirect": null,
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]/installments",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/installments/page.tsx",
+      "samplePath": "/admin/students/1088/installments",
+      "redirect": "/admin/students/1088/payments?tab=installments",
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]/meetings",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/meetings/page.tsx",
+      "samplePath": "/admin/students/1088/meetings",
+      "redirect": "/admin/students/1088/history?tab=meetings",
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]/notes",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/notes/page.tsx",
+      "samplePath": "/admin/students/1088/notes",
+      "redirect": "/admin/students/1088/activities",
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/page.tsx",
+      "samplePath": "/admin/students/1088",
+      "redirect": null,
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]/payments",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/payments/page.tsx",
+      "samplePath": "/admin/students/1088/payments",
+      "redirect": null,
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]/personal",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/personal/page.tsx",
+      "samplePath": "/admin/students/1088/personal",
+      "redirect": "/admin/students/1088",
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]/polling-history",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/polling-history/page.tsx",
+      "samplePath": "/admin/students/1088/polling-history",
+      "redirect": "/admin/students/1088/history?tab=polling",
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]/sales",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/sales/page.tsx",
+      "samplePath": "/admin/students/1088/sales",
+      "redirect": "/admin/students/1088/payments?tab=saleHistory",
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]/schedule",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/schedule/page.tsx",
+      "samplePath": "/admin/students/1088/schedule",
+      "redirect": "/admin/students/1088/history?tab=schedule",
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]/sms-history",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/sms-history/page.tsx",
+      "samplePath": "/admin/students/1088/sms-history",
+      "redirect": "/admin/students/1088/history?tab=sms",
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]/whatsapp-conversation",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/whatsapp-conversation/page.tsx",
+      "samplePath": "/admin/students/1088/whatsapp-conversation",
+      "redirect": "/admin/students/1088/history?tab=whatsappConversation",
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/[studentId]/whatsapp-history",
+      "sourceFile": "app/[locale]/(main)/admin/students/[studentId]/whatsapp-history/page.tsx",
+      "samplePath": "/admin/students/1088/whatsapp-history",
+      "redirect": "/admin/students/1088/history?tab=whatsapp",
+      "expectedComponent": "StudentPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students",
+      "sourceFile": "app/[locale]/(main)/admin/students/page.tsx",
+      "samplePath": "/admin/students",
+      "redirect": null,
+      "expectedComponent": "StudentsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/past",
+      "sourceFile": "app/[locale]/(main)/admin/students/past/page.tsx",
+      "samplePath": "/admin/students/past",
+      "redirect": null,
+      "expectedComponent": "StudentsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/potential",
+      "sourceFile": "app/[locale]/(main)/admin/students/potential/page.tsx",
+      "samplePath": "/admin/students/potential",
+      "redirect": null,
+      "expectedComponent": "StudentsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/students/register",
+      "sourceFile": "app/[locale]/(main)/admin/students/register/page.tsx",
+      "samplePath": "/admin/students/register",
+      "redirect": null,
+      "expectedComponent": "RegistrationPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/support",
+      "sourceFile": "app/[locale]/(main)/admin/support/page.tsx",
+      "samplePath": "/admin/support",
+      "redirect": null,
+      "expectedComponent": "SupportPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers/[teacherId]/activities",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/[teacherId]/activities/page.tsx",
+      "samplePath": "/admin/teachers/t1/activities",
+      "redirect": null,
+      "expectedComponent": "TeacherRelatedPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers/[teacherId]/aktiviteler",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/[teacherId]/aktiviteler/page.tsx",
+      "samplePath": "/admin/teachers/t1/aktiviteler",
+      "redirect": "/admin/teachers/t1/activities",
+      "expectedComponent": "TeacherRelatedPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers/[teacherId]/gecmis",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/[teacherId]/gecmis/page.tsx",
+      "samplePath": "/admin/teachers/t1/gecmis",
+      "redirect": "/admin/teachers/t1/history",
+      "expectedComponent": "CalendarPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers/[teacherId]/groups",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/[teacherId]/groups/page.tsx",
+      "samplePath": "/admin/teachers/t1/groups",
+      "redirect": null,
+      "expectedComponent": "TeacherRelatedPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers/[teacherId]/gruplar",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/[teacherId]/gruplar/page.tsx",
+      "samplePath": "/admin/teachers/t1/gruplar",
+      "redirect": "/admin/teachers/t1/groups",
+      "expectedComponent": "TeacherRelatedPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers/[teacherId]/history",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/[teacherId]/history/page.tsx",
+      "samplePath": "/admin/teachers/t1/history",
+      "redirect": null,
+      "expectedComponent": "CalendarPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers/[teacherId]/notes",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/[teacherId]/notes/page.tsx",
+      "samplePath": "/admin/teachers/t1/notes",
+      "redirect": "/admin/teachers/t1/activities",
+      "expectedComponent": "TeacherRelatedPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers/[teacherId]/odeme",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/[teacherId]/odeme/page.tsx",
+      "samplePath": "/admin/teachers/t1/odeme",
+      "redirect": "/admin/teachers/t1/payments",
+      "expectedComponent": "TeacherRelatedPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers/[teacherId]/ogrenciler",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/[teacherId]/ogrenciler/page.tsx",
+      "samplePath": "/admin/teachers/t1/ogrenciler",
+      "redirect": "/admin/teachers/t1/students",
+      "expectedComponent": "TeacherRelatedPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers/[teacherId]",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/[teacherId]/page.tsx",
+      "samplePath": "/admin/teachers/t1",
+      "redirect": null,
+      "expectedComponent": "TeachersPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers/[teacherId]/payments",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/[teacherId]/payments/page.tsx",
+      "samplePath": "/admin/teachers/t1/payments",
+      "redirect": null,
+      "expectedComponent": "TeacherRelatedPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers/[teacherId]/personal",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/[teacherId]/personal/page.tsx",
+      "samplePath": "/admin/teachers/t1/personal",
+      "redirect": "/admin/teachers/t1",
+      "expectedComponent": "TeachersPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers/[teacherId]/salary",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/[teacherId]/salary/page.tsx",
+      "samplePath": "/admin/teachers/t1/salary",
+      "redirect": "/admin/teachers/t1/payments",
+      "expectedComponent": "TeacherRelatedPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers/[teacherId]/schedule",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/[teacherId]/schedule/page.tsx",
+      "samplePath": "/admin/teachers/t1/schedule",
+      "redirect": "/admin/teachers/t1/history?tab=schedule",
+      "expectedComponent": "CalendarPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers/[teacherId]/students",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/[teacherId]/students/page.tsx",
+      "samplePath": "/admin/teachers/t1/students",
+      "redirect": null,
+      "expectedComponent": "TeacherRelatedPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers/form",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/form/page.tsx",
+      "samplePath": "/admin/teachers/form",
+      "redirect": null,
+      "expectedComponent": "TeachersPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/page.tsx",
+      "samplePath": "/admin/teachers",
+      "redirect": null,
+      "expectedComponent": "TeachersPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/teachers/salary",
+      "sourceFile": "app/[locale]/(main)/admin/teachers/salary/page.tsx",
+      "samplePath": "/admin/teachers/salary",
+      "redirect": null,
+      "expectedComponent": "PayrollPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/verification-requests/installments",
+      "sourceFile": "app/[locale]/(main)/admin/verification-requests/installments/page.tsx",
+      "samplePath": "/admin/verification-requests/installments",
+      "redirect": null,
+      "expectedComponent": "VerificationPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/verification-requests/meetings",
+      "sourceFile": "app/[locale]/(main)/admin/verification-requests/meetings/page.tsx",
+      "samplePath": "/admin/verification-requests/meetings",
+      "redirect": null,
+      "expectedComponent": "VerificationPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/verification-requests",
+      "sourceFile": "app/[locale]/(main)/admin/verification-requests/page.tsx",
+      "samplePath": "/admin/verification-requests",
+      "redirect": null,
+      "expectedComponent": "VerificationPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/whatsapp/[whatsappId]",
+      "sourceFile": "app/[locale]/(main)/admin/whatsapp/[whatsappId]/page.tsx",
+      "samplePath": "/admin/whatsapp/m3",
+      "redirect": null,
+      "expectedComponent": "CommunicationsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/whatsapp/create",
+      "sourceFile": "app/[locale]/(main)/admin/whatsapp/create/page.tsx",
+      "samplePath": "/admin/whatsapp/create",
+      "redirect": null,
+      "expectedComponent": "CommunicationsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/whatsapp",
+      "sourceFile": "app/[locale]/(main)/admin/whatsapp/page.tsx",
+      "samplePath": "/admin/whatsapp",
+      "redirect": null,
+      "expectedComponent": "CommunicationsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/admin/whatsapp/templates",
+      "sourceFile": "app/[locale]/(main)/admin/whatsapp/templates/page.tsx",
+      "samplePath": "/admin/whatsapp/templates",
+      "redirect": null,
+      "expectedComponent": "CommunicationsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/super/billing/cards",
+      "sourceFile": "app/[locale]/(main)/super/billing/cards/page.tsx",
+      "samplePath": "/super/billing/cards",
+      "redirect": "/payment?tab=cards",
+      "expectedComponent": "AccessPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/super/billing/history",
+      "sourceFile": "app/[locale]/(main)/super/billing/history/page.tsx",
+      "samplePath": "/super/billing/history",
+      "redirect": "/payment?tab=history",
+      "expectedComponent": "AccessPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/super/billing",
+      "sourceFile": "app/[locale]/(main)/super/billing/page.tsx",
+      "samplePath": "/super/billing",
+      "redirect": "/payment",
+      "expectedComponent": "AccessPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/super/branches/[id]",
+      "sourceFile": "app/[locale]/(main)/super/branches/[id]/page.tsx",
+      "samplePath": "/super/branches/branch-1",
+      "redirect": null,
+      "expectedComponent": "BranchDetailPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/super/branches/form",
+      "sourceFile": "app/[locale]/(main)/super/branches/form/page.tsx",
+      "samplePath": "/super/branches/form",
+      "redirect": null,
+      "expectedComponent": "TeamPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/super/branches",
+      "sourceFile": "app/[locale]/(main)/super/branches/page.tsx",
+      "samplePath": "/super/branches",
+      "redirect": null,
+      "expectedComponent": "TeamPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/super/branches/payments",
+      "sourceFile": "app/[locale]/(main)/super/branches/payments/page.tsx",
+      "samplePath": "/super/branches/payments",
+      "redirect": null,
+      "expectedComponent": "BillingPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/super/expenses/form",
+      "sourceFile": "app/[locale]/(main)/super/expenses/form/page.tsx",
+      "samplePath": "/super/expenses/form",
+      "redirect": null,
+      "expectedComponent": "ExpensesPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/super/expenses",
+      "sourceFile": "app/[locale]/(main)/super/expenses/page.tsx",
+      "samplePath": "/super/expenses",
+      "redirect": null,
+      "expectedComponent": "ExpensesPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/super/files",
+      "sourceFile": "app/[locale]/(main)/super/files/page.tsx",
+      "samplePath": "/super/files",
+      "redirect": null,
+      "expectedComponent": "FilesPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/super/settings",
+      "sourceFile": "app/[locale]/(main)/super/settings/page.tsx",
+      "samplePath": "/super/settings",
+      "redirect": null,
+      "expectedComponent": "SettingsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/super/users/[userId]",
+      "sourceFile": "app/[locale]/(main)/super/users/[userId]/page.tsx",
+      "samplePath": "/super/users/users-1",
+      "redirect": null,
+      "expectedComponent": "TeamPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/super/users/form",
+      "sourceFile": "app/[locale]/(main)/super/users/form/page.tsx",
+      "samplePath": "/super/users/form",
+      "redirect": null,
+      "expectedComponent": "TeamPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/super/users",
+      "sourceFile": "app/[locale]/(main)/super/users/page.tsx",
+      "samplePath": "/super/users",
+      "redirect": null,
+      "expectedComponent": "TeamPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/user/account",
+      "sourceFile": "app/[locale]/(main)/user/account/page.tsx",
+      "samplePath": "/user/account",
+      "redirect": null,
+      "expectedComponent": "AccountPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/user/notifications",
+      "sourceFile": "app/[locale]/(main)/user/notifications/page.tsx",
+      "samplePath": "/user/notifications",
+      "redirect": null,
+      "expectedComponent": "NotificationsPage",
+      "integrationRequired": false
+    },
+    {
+      "pattern": "/forgot-password",
+      "sourceFile": "app/[locale]/(public)/(auth)/forgot-password/page.tsx",
+      "samplePath": "/forgot-password",
+      "redirect": null,
+      "expectedComponent": "AccessPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/login",
+      "sourceFile": "app/[locale]/(public)/(auth)/login/page.tsx",
+      "samplePath": "/login",
+      "redirect": null,
+      "expectedComponent": "AccessPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/redirect",
+      "sourceFile": "app/[locale]/(public)/(auth)/redirect/page.tsx",
+      "samplePath": "/redirect",
+      "redirect": null,
+      "expectedComponent": "AccessPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/reset-password",
+      "sourceFile": "app/[locale]/(public)/(auth)/reset-password/page.tsx",
+      "samplePath": "/reset-password",
+      "redirect": null,
+      "expectedComponent": "AccessPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/polling",
+      "sourceFile": "app/[locale]/(public)/(other)/polling/page.tsx",
+      "samplePath": "/polling",
+      "redirect": null,
+      "expectedComponent": "AccessPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/unsubscribe/[token]",
+      "sourceFile": "app/[locale]/(public)/(other)/unsubscribe/[token]/page.tsx",
+      "samplePath": "/unsubscribe/demo-token",
+      "redirect": null,
+      "expectedComponent": "AccessPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/branch-selection",
+      "sourceFile": "app/[locale]/branch-selection/page.tsx",
+      "samplePath": "/branch-selection",
+      "redirect": null,
+      "expectedComponent": "AccessPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/",
+      "sourceFile": "app/[locale]/page.tsx",
+      "samplePath": "/",
+      "redirect": "/admin/dashboard",
+      "expectedComponent": "DashboardPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/payment/[token]",
+      "sourceFile": "app/[locale]/payment/[token]/page.tsx",
+      "samplePath": "/payment/demo-token",
+      "redirect": null,
+      "expectedComponent": "AccessPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/payment",
+      "sourceFile": "app/[locale]/payment/page.tsx",
+      "samplePath": "/payment",
+      "redirect": null,
+      "expectedComponent": "AccessPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/student/activities/[activityId]",
+      "sourceFile": "app/[locale]/student/activities/[activityId]/page.tsx",
+      "samplePath": "/student/activities/activity-demo",
+      "redirect": null,
+      "expectedComponent": "PortalPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/student/activities",
+      "sourceFile": "app/[locale]/student/activities/page.tsx",
+      "samplePath": "/student/activities",
+      "redirect": null,
+      "expectedComponent": "PortalPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/student/courses/[groupId]",
+      "sourceFile": "app/[locale]/student/courses/[groupId]/page.tsx",
+      "samplePath": "/student/courses/g1",
+      "redirect": null,
+      "expectedComponent": "PortalPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/student/courses",
+      "sourceFile": "app/[locale]/student/courses/page.tsx",
+      "samplePath": "/student/courses",
+      "redirect": null,
+      "expectedComponent": "PortalPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/student/dashboard",
+      "sourceFile": "app/[locale]/student/dashboard/page.tsx",
+      "samplePath": "/student/dashboard",
+      "redirect": null,
+      "expectedComponent": "PortalPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/student/grades",
+      "sourceFile": "app/[locale]/student/grades/page.tsx",
+      "samplePath": "/student/grades",
+      "redirect": null,
+      "expectedComponent": "PortalPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/student",
+      "sourceFile": "app/[locale]/student/page.tsx",
+      "samplePath": "/student",
+      "redirect": "/student/dashboard",
+      "expectedComponent": "PortalPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/teacher/activities/[activityId]/submissions",
+      "sourceFile": "app/[locale]/teacher/activities/[activityId]/submissions/page.tsx",
+      "samplePath": "/teacher/activities/activity-demo/submissions",
+      "redirect": null,
+      "expectedComponent": "PortalPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/teacher/activities",
+      "sourceFile": "app/[locale]/teacher/activities/page.tsx",
+      "samplePath": "/teacher/activities",
+      "redirect": null,
+      "expectedComponent": "PortalPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/teacher/announcements",
+      "sourceFile": "app/[locale]/teacher/announcements/page.tsx",
+      "samplePath": "/teacher/announcements",
+      "redirect": null,
+      "expectedComponent": "PortalPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/teacher/courses/[groupId]/students",
+      "sourceFile": "app/[locale]/teacher/courses/[groupId]/students/page.tsx",
+      "samplePath": "/teacher/courses/g1/students",
+      "redirect": null,
+      "expectedComponent": "PortalPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/teacher/courses",
+      "sourceFile": "app/[locale]/teacher/courses/page.tsx",
+      "samplePath": "/teacher/courses",
+      "redirect": null,
+      "expectedComponent": "PortalPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/teacher/dashboard",
+      "sourceFile": "app/[locale]/teacher/dashboard/page.tsx",
+      "samplePath": "/teacher/dashboard",
+      "redirect": null,
+      "expectedComponent": "PortalPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/teacher/grade-overview/[groupId]",
+      "sourceFile": "app/[locale]/teacher/grade-overview/[groupId]/page.tsx",
+      "samplePath": "/teacher/grade-overview/g1",
+      "redirect": null,
+      "expectedComponent": "PortalPage",
+      "integrationRequired": true
+    },
+    {
+      "pattern": "/teacher",
+      "sourceFile": "app/[locale]/teacher/page.tsx",
+      "samplePath": "/teacher",
+      "redirect": "/teacher/dashboard",
+      "expectedComponent": "PortalPage",
+      "integrationRequired": true
+    }
+  ],
+  "reportLeaves": [
+    "/admin/reports/sales-by-advisor",
+    "/admin/reports/conversion-funnel",
+    "/admin/reports/payment-method-performance",
+    "/admin/reports/installment-risk",
+    "/admin/reports/discount-impact",
+    "/admin/reports/high-discount-sales",
+    "/admin/reports/unpaid-balance-heavy",
+    "/admin/reports/pending-sales",
+    "/admin/reports/completed-sales",
+    "/admin/reports/cancelled-sales",
+    "/admin/reports/refunded-sales",
+    "/admin/reports/no-discount-sales",
+    "/admin/reports/expiring-soon-sales",
+    "/admin/reports/advisor-revenue-risk",
+    "/admin/reports/cancellation-refund-analysis",
+    "/admin/reports/pricing-package-performance",
+    "/admin/reports/revenue-forecast-trend",
+    "/admin/reports/contract-expiry-revenue-risk",
+    "/admin/education-reports/meetings",
+    "/admin/education-reports/active-students",
+    "/admin/education-reports/active-unassigned-students",
+    "/admin/education-reports/frozen-students",
+    "/admin/education-reports/ending-soon-students",
+    "/admin/education-reports/bonus-used-students",
+    "/admin/education-reports/bonus-remaining-risk",
+    "/admin/education-reports/education-status-distribution",
+    "/admin/education-reports/attendance-risk-students",
+    "/admin/education-reports/attendance-trend",
+    "/admin/education-reports/no-attendance-recently",
+    "/admin/education-reports/group-assignment-load",
+    "/admin/education-reports/group-switch-history",
+    "/admin/education-reports/transfer-out-students",
+    "/admin/education-reports/reactivation-candidates",
+    "/admin/education-reports/no-meeting-recently",
+    "/admin/education-reports/low-attendance-high-remaining",
+    "/admin/education-reports/never-attended-students",
+    "/admin/education-reports/zero-bonus-remaining",
+    "/admin/education-reports/long-freeze-students",
+    "/admin/education-reports/never-group-assigned",
+    "/admin/education-reports/high-attendance-students",
+    "/admin/education-reports/meeting-intensive-students",
+    "/admin/education-reports/no-advisor-students"
+  ]
+}

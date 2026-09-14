@@ -1,0 +1,73 @@
+{
+  "education": {
+    "title": "Eğitimler",
+    "columns": ["Eğitim", "Seviyeler", "Süre", "Aktif öğrenci", "Durum"],
+    "rows": [
+      ["Genel İngilizce", "A1 · A2 · B1 · B2", "120 ders", "156 öğrenci", "Aktif"],
+      ["IELTS Hazırlık", "B2 · C1", "80 ders", "58 öğrenci", "Aktif"],
+      ["İş İngilizcesi", "B1 · B2 · C1", "60 ders", "34 öğrenci", "Aktif"]
+    ],
+    "create": "Eğitim ekle"
+  },
+  "period": {
+    "title": "Dönemler",
+    "columns": ["Dönem adı", "Başlangıç", "Bitiş", "Eğitim", "Durum"],
+    "rows": [
+      ["2026 Güz", "1 Eylül 2026", "31 Aralık 2026", "Tüm eğitimler", "Aktif"],
+      ["2026 Yaz", "1 Haziran 2026", "31 Ağustos 2026", "Genel İngilizce", "Tamamlandı"],
+      ["2027 Bahar", "5 Ocak 2027", "30 Nisan 2027", "Tüm eğitimler", "Planlandı"]
+    ],
+    "create": "Dönem ekle"
+  },
+  "program-terms": {
+    "title": "Program Dönemleri",
+    "columns": ["Program dönemi", "Eğitim", "Başlangıç", "Bitiş", "Durum"],
+    "rows": [
+      ["Güz · Hafta içi sabah", "Genel İngilizce", "7 Eylül 2026", "27 Kasım 2026", "Aktif"],
+      ["Güz · Akşam programı", "IELTS Hazırlık", "7 Eylül 2026", "18 Aralık 2026", "Aktif"],
+      ["Güz · Hafta sonu", "Genel İngilizce", "12 Eylül 2026", "20 Aralık 2026", "Planlandı"]
+    ],
+    "create": "Program dönemi ekle"
+  },
+  "curriculum-units": {
+    "title": "Müfredat Birimleri",
+    "columns": ["Birim", "Eğitim / seviye", "Ders sayısı", "Sıra", "Durum"],
+    "rows": [
+      ["Getting to know you", "Genel İngilizce / A2", "8 ders", "01", "Aktif"],
+      ["Everyday conversations", "Genel İngilizce / B1", "12 ders", "02", "Aktif"],
+      ["Academic writing", "IELTS / C1", "16 ders", "03", "Aktif"],
+      ["Business presentations", "İş İngilizcesi / B2", "10 ders", "04", "Aktif"]
+    ],
+    "create": "Birim ekle"
+  },
+  "staff": {
+    "title": "Personeller",
+    "columns": ["Ad soyad", "Görev", "Şube", "Başlangıç", "Durum"],
+    "rows": [
+      ["Furkan Çolak", "Şube yöneticisi", "New York", "1 Ağustos 2024", "Aktif"],
+      ["Ayça Aydın", "Eğitim danışmanı", "New York", "3 Mart 2025", "Aktif"],
+      ["Berk Yalçın", "Öğrenci işleri", "New York", "12 Mayıs 2025", "Aktif"]
+    ],
+    "create": "Personel oluştur"
+  },
+  "branches": {
+    "title": "Şubeler",
+    "columns": ["Şube", "Şehir", "Aktif öğrenci", "Yetkili", "Durum"],
+    "rows": [
+      ["New York", "İstanbul", "248", "Furkan Çolak", "Aktif"],
+      ["Kadıköy", "İstanbul", "186", "Ayça Aydın", "Aktif"],
+      ["Bakırköy", "İstanbul", "124", "Berk Yalçın", "Aktif"]
+    ],
+    "create": "Şube oluştur"
+  },
+  "users": {
+    "title": "Kullanıcılar",
+    "columns": ["Kullanıcı", "E-posta", "Rol", "Son giriş", "Durum"],
+    "rows": [
+      ["Furkan Çolak", "furkan.colak@jamaster.com.tr", "Süper Admin", "Bugün 13:45", "Aktif"],
+      ["Ayça Aydın", "ayca.aydin@jamaster.com.tr", "Şube yöneticisi", "Bugün 09:12", "Aktif"],
+      ["Selin Demir", "selin.demir@jamaster.com.tr", "Öğretmen", "Bugün 08:30", "Aktif"]
+    ],
+    "create": "Kullanıcı oluştur"
+  }
+}

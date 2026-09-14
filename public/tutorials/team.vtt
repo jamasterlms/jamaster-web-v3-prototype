@@ -1,0 +1,16 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.000
+Personeli seçin.
+Listeden personel detayını açın. Kişisel ve iletişim bilgilerini kontrol edin; gerekli alanları düzenleyin.
+
+2
+00:00:08.000 --> 00:00:16.000
+Şube ve rolü belirleyin.
+Erişilebilir şubeleri ve rol şablonunu inceleyin. Özel izinlerde hangi kaynağa hangi işlemin verildiğini kontrol edin.
+
+3
+00:00:16.000 --> 00:00:24.000
+Yetkiyi gözden geçirin.
+Görüntüleme, oluşturma, düzenleme ve silme ayrı işlemlerdir. Prototip izin görünümü sunar; canlı yetki denetimi sunucuda uygulanmalıdır.
