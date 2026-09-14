@@ -1,0 +1,874 @@
+[
+  {
+    "id": "documents",
+    "title": "Öğrenci belgesini ekleyin",
+    "category": "Öğrenciler",
+    "roles": ["staff", "super"],
+    "routes": [
+      {
+        "pattern": "^/admin/students/[^/]+/documents(?:\\?|$)",
+        "priority": 100
+      }
+    ],
+    "steps": [
+      {
+        "title": "Satış ve belge türünü seçin",
+        "text": "Öğrencinin belge bölümünde Belge ekle düğmesini kullanın. Belgenin ait olduğu satışı ve sözleşme, bono veya taahhütname türünü seçin."
+      },
+      {
+        "title": "Dosyayı yükleyin",
+        "text": "PDF, PNG, JPEG veya WebP dosyası seçin. Boyut sınırını kontrol edin. Dosyada öğrenci imzası varsa imza bilgisi ve tarihini belirtin."
+      },
+      {
+        "title": "Önizlemeyi kontrol edin",
+        "text": "Dosyayı ve satış bilgisini inceleyin. Gerekirse düzenlemeye dönün; sonra kaydedin. Kaydedilen belgeyi listeden açıp indirebilirsiniz."
+      }
+    ]
+  },
+  {
+    "id": "registration",
+    "title": "Yeni öğrenci kaydı oluşturun",
+    "category": "Öğrenciler",
+    "roles": ["staff", "super"],
+    "routes": [
+      {
+        "pattern": "^/admin/students/(?:register|form)(?:\\?|$)",
+        "priority": 100
+      }
+    ],
+    "steps": [
+      {
+        "title": "Zorunlu bilgileri tamamlayın",
+        "text": "Ad, iletişim ve kayıt alanlarını üst bölümden doldurun. Telefon alanında ülkeyi seçin; numaranın geçerli olduğunu kontrol edin."
+      },
+      {
+        "title": "Tercih ve görüşme bilgileri",
+        "text": "Eğitim tercihlerini ve görüşme sonucunu girin. İsteğe bağlı alanlar aşağıdadır. Seçtiğiniz yanıta bağlı açılan ek alanları tamamlayın."
+      },
+      {
+        "title": "Önizleyin ve kaydedin",
+        "text": "Kontrol ekranında tüm bölümleri okuyun. Düzenle bağlantısıyla ilgili bölüme dönün. Bilgiler doğruysa kaydı tamamlayın."
+      }
+    ]
+  },
+  {
+    "id": "polling",
+    "title": "Derse katılımınızı doğrulayın",
+    "category": "Başlangıç",
+    "roles": ["student", "teacher", "staff", "super"],
+    "routes": [
+      {
+        "pattern": "^/polling(?:\\?|$)",
+        "priority": 120
+      }
+    ],
+    "steps": [
+      {
+        "title": "Bağlantıyı açın",
+        "text": "Eğitmeninizin paylaştığı yoklama bağlantısını kullanın. Bağlantı eksik veya süresi dolmuşsa yeni bağlantı isteyin."
+      },
+      {
+        "title": "Telefonunuzu girin",
+        "text": "Kayıtlı telefon numaranızı ülke koduyla kontrol edin. Yanlış numara girdiyseniz kod adımından telefon alanına dönebilirsiniz."
+      },
+      {
+        "title": "Kodu kontrol edin",
+        "text": "Doğrulama kodunu girin ve sonuç mesajını okuyun. Prototipte gösterilen deneme kodu kullanılır; gerçek SMS ve katılım kaydı oluşturulmaz."
+      }
+    ]
+  },
+  {
+    "id": "login",
+    "title": "Hesabınıza giriş yapın",
+    "category": "Başlangıç",
+    "roles": ["student", "teacher", "staff", "super"],
+    "routes": ["^/(login|forgot-password|reset-password)(/|$)"],
+    "steps": [
+      {
+        "title": "Doğru rolü seçin",
+        "text": "Giriş ekranında Öğrenci, Öğretmen veya Personel sekmesini seçin. Kurumunuzun hesabınıza tanımladığı e-posta adresini kullanın."
+      },
+      {
+        "title": "Bilgilerinizi kontrol edin",
+        "text": "E-posta ve şifrenizi girin. Şifreyi göz ikonuyla kontrol edebilirsiniz. Kırmızı alan mesajını düzelttikten sonra tekrar deneyin."
+      },
+      {
+        "title": "Hesabınıza geri dönün",
+        "text": "Şifrenizi unuttuysanız yenileme bağlantısını kullanın. Oturum süresi dolduğunda aynı rolle tekrar giriş yapın; erişemediğiniz kayıt için kurumunuza danışın."
+      }
+    ]
+  },
+  {
+    "id": "access",
+    "title": "Giriş ve erişim sorunlarını çözün",
+    "category": "Başlangıç",
+    "roles": ["student", "teacher", "staff", "super"],
+    "routes": [
+      {
+        "pattern": "^/(?:access|unauthorized|forbidden|offline|maintenance|error)(?:/|\\?|$)",
+        "priority": 100
+      }
+    ],
+    "steps": [
+      {
+        "title": "Durum mesajını okuyun",
+        "text": "Oturumun sona ermesi, yanlış rol ve işlem yetkisi olmaması farklı durumlardır. Ekrandaki açıklama hangi adımı atmanız gerektiğini belirtir."
+      },
+      {
+        "title": "Uygun işlemi seçin",
+        "text": "Oturum için tekrar giriş yapın. Yetki için kurum yetkilinize başvurun. İnternet veya hizmet sorunu varsa bağlantıyı kontrol ederek yeniden deneyin."
+      },
+      {
+        "title": "Çalışmanıza dönün",
+        "text": "Hata ekranındaki güvenli dönüş bağlantısını kullanın. Öğrenci ve öğretmen hesapları kendi portallarına döner; izin değişikliği kurum tarafından yapılır."
+      }
+    ]
+  },
+  {
+    "id": "workspace",
+    "title": "Çalışma alanını tanıyın",
+    "category": "Başlangıç",
+    "roles": ["staff", "super"],
+    "routes": ["^/admin/dashboard$"],
+    "steps": [
+      {
+        "title": "Menü ve sekmeler",
+        "text": "Soldaki menüyle modülü açın. Ziyaret ettiğiniz sayfalar üstte çalışma sekmesi olur. Aynı sekmeye döndüğünüzde filtreleriniz korunur."
+      },
+      {
+        "title": "Şube ve görünüm",
+        "text": "Üstten şubenizi seçin. Görünüm menüsünden ölçeği ayarlayın. Hızlı aramayı logo altından veya Ctrl K / Command K ile açın."
+      },
+      {
+        "title": "Gündem ve hızlı önizleme",
+        "text": "Sağ panelde günlük akışı veya JamAI önerilerini açın. Bir kişiye tıklayarak önizleyin; ayrıntılı işlem için tam sayfaya geçin."
+      }
+    ]
+  },
+  {
+    "id": "students",
+    "title": "Öğrencileri bulun ve yönetin",
+    "category": "Öğrenciler",
+    "roles": ["staff", "super"],
+    "routes": ["^/admin/students"],
+    "steps": [
+      {
+        "title": "Listeyi daraltın",
+        "text": "Aktif, geçmiş veya potansiyel öğrencileri açın. Arama ve filtrelerle kayıtları bulun. Sütun ve sıralama menülerini ihtiyacınıza göre düzenleyin."
+      },
+      {
+        "title": "Önizleme ve detay",
+        "text": "Sağ panel açıksa öğrenciye tek tıklama önizlemeyi açar. Çift tıklama detay sayfasına götürür. Panel kapalıysa doğrudan detay açılır."
+      },
+      {
+        "title": "İşlemi doğru bölümde yapın",
+        "text": "Profil, gruplar, eğitim ödemeleri, aktiviteler, belgeler ve geçmiş ayrı bölümlerdir. Alanı düzenledikten sonra kaydedin veya vazgeçin."
+      }
+    ]
+  },
+  {
+    "id": "groups",
+    "title": "Grupları ve üyelikleri yönetin",
+    "category": "Eğitim",
+    "roles": ["staff", "super"],
+    "routes": [
+      {
+        "pattern": "^/admin/groups(?:/|\\?|$)",
+        "priority": 20
+      }
+    ],
+    "steps": [
+      {
+        "title": "Grubu oluşturun",
+        "text": "Grup adı, eğitim, seviye, öğretmen ve kapasiteyi doldurun. Program ve derslik gibi ek bilgileri alt bölümden ekleyin."
+      },
+      {
+        "title": "Öğrencileri atayın",
+        "text": "Grup detayında öğrencileri ve üyelikleri kontrol edin. Atama veya transfer sırasında ilgili eğitim ve kapasite bilgilerini inceleyin."
+      },
+      {
+        "title": "Programı takip edin",
+        "text": "Grubun program, öğretmen, yoklama ve not bölümlerini kullanın. Yanlış gruba işlem yapmamak için başlıktaki grup adını kontrol edin."
+      }
+    ]
+  },
+  {
+    "id": "teachers",
+    "title": "Öğretmen kayıtlarını yönetin",
+    "category": "Eğitim",
+    "roles": ["staff", "super"],
+    "routes": [
+      {
+        "pattern": "^/admin/teachers(?:/|\\?|$)",
+        "priority": 20
+      }
+    ],
+    "steps": [
+      {
+        "title": "Öğretmeni bulun",
+        "text": "Arama ve durum filtrelerini kullanın. Satırdaki ikonla detay açın veya sağ panelde hızlı önizleme yapın."
+      },
+      {
+        "title": "Bilgileri tamamlayın",
+        "text": "Kişisel ve iletişim alanlarını kontrol edin. Sertifika ve ek bilgileri ilgili bölümde düzenleyin. Zorunlu alan mesajlarını tamamlayın."
+      },
+      {
+        "title": "Atamaları inceleyin",
+        "text": "Öğrenciler, gruplar, aktiviteler, program ve ödeme bölümlerinden öğretmenin ilişkili kayıtlarına ulaşın."
+      }
+    ]
+  },
+  {
+    "id": "calendar",
+    "title": "Ders programını düzenleyin",
+    "category": "Eğitim",
+    "roles": ["staff", "super"],
+    "routes": [
+      {
+        "pattern": "^/admin/calendar(?:\\?|$)",
+        "priority": 80
+      },
+      {
+        "pattern": "^/admin/groups/[^/]+/schedule(?:\\?|$)",
+        "priority": 120
+      },
+      {
+        "pattern": "^/admin/teachers/[^/]+/history\\?(?=[^#]*\\btab=schedule(?:&|$))",
+        "priority": 130
+      }
+    ],
+    "steps": [
+      {
+        "title": "Tarih ve görünümü seçin",
+        "text": "Gün veya hafta görünümünü açın; grup ve öğretmen filtrelerini kullanın. Etkinliğe tıklayarak ders veya görüşme bilgisini okuyun."
+      },
+      {
+        "title": "Düzenleme modunu açın",
+        "text": "Boş bir zaman aralığını seçerek ders ekleyin. Mevcut dersi taşıyabilir veya süreyi değiştirebilirsiniz. Mobilde ders formunu kullanın."
+      },
+      {
+        "title": "Değişikliği kontrol edin",
+        "text": "Açılan formda tarih, başlangıç, bitiş, öğretmen ve dersliği inceleyin. Çakışma mesajlarını giderdikten sonra kaydedin."
+      }
+    ]
+  },
+  {
+    "id": "attendance",
+    "title": "Yoklamayı doğru oturuma kaydedin",
+    "category": "Eğitim",
+    "roles": ["staff", "super"],
+    "routes": [
+      {
+        "pattern": "^/admin/calendar/pollings(?:\\?|$)",
+        "priority": 110
+      },
+      {
+        "pattern": "^/admin/groups/[^/]+/polling(?:\\?|$)",
+        "priority": 130
+      },
+      {
+        "pattern": "^/admin/students/[^/]+/history\\?(?=[^#]*\\btab=polling(?:&|$))",
+        "priority": 130
+      }
+    ],
+    "steps": [
+      {
+        "title": "Ders oturumunu seçin",
+        "text": "Grup, ders tarihi ve saatini kontrol edin. Aynı gün birden fazla ders varsa doğru oturumda olduğunuzdan emin olun."
+      },
+      {
+        "title": "Katılımı işaretleyin",
+        "text": "Öğrencilerin katılım durumlarını tek tek seçin. Kaydetmeden önce eksik veya yanlış işaretlenen satırları kontrol edin."
+      },
+      {
+        "title": "Geçmişi inceleyin",
+        "text": "Kaydedilen yoklama grup ve öğrenci geçmişinde görünür. Önceki oturumları tarih filtresiyle bulun; güncel oturumla karıştırmayın."
+      }
+    ]
+  },
+  {
+    "id": "meetings",
+    "title": "Görüşmeyi kaydedin ve takip edin",
+    "category": "Öğrenciler",
+    "roles": ["staff", "super"],
+    "routes": ["^/admin/meetings"],
+    "steps": [
+      {
+        "title": "Öğrenciyi seçin",
+        "text": "Yeni görüşmede mevcut öğrenciyi arayın. Kişi henüz kayıtlı değilse yeni öğrenci kaydı seçeneğinden bilgilerini tamamlayın."
+      },
+      {
+        "title": "Görüşme sonucunu girin",
+        "text": "Tür, tarih, sonuç ve not alanlarını doldurun. Olumsuz sonuçta nedeni; takip gerekiyorsa sonraki görüşme tarihini belirtin."
+      },
+      {
+        "title": "Takibi kontrol edin",
+        "text": "Kaydetmeden önce notu ve sonucu inceleyin. Görüşme geçmişinden kayda ulaşın; planlanan takip tarihini takvimde kontrol edin."
+      }
+    ]
+  },
+  {
+    "id": "education",
+    "title": "Eğitim kataloglarını düzenleyin",
+    "category": "Eğitim",
+    "roles": ["staff", "super"],
+    "routes": [
+      {
+        "pattern": "^/admin/education(?:\\?|$)",
+        "priority": 100
+      },
+      {
+        "pattern": "^/admin/education/period(?:\\?|$)",
+        "priority": 110
+      },
+      {
+        "pattern": "^/admin/program-terms(?:\\?|$)",
+        "priority": 110
+      },
+      {
+        "pattern": "^/admin/(?:educations|periods|programs|program-periods|curriculum-units)(?:/|\\?|$)",
+        "priority": 70
+      }
+    ],
+    "steps": [
+      {
+        "title": "Doğru kataloğu açın",
+        "text": "Eğitim, dönem, program veya müfredat birimini ilgili menüden açın. Arama ve durum filtresiyle mevcut kayıtları kontrol edin."
+      },
+      {
+        "title": "Bağlı alanları tamamlayın",
+        "text": "Yeni kayıtta gerekli ad, tür ve ilişkileri seçin. Eğitim ve program dönemini birbirine uygun tutun; ek alanları alt bölümde doldurun."
+      },
+      {
+        "title": "İlişkileri koruyun",
+        "text": "Kaydı düzenledikten sonra ilişkili seçimleri kontrol edin. Kullanımdaki bir kaydı silmeden önce uyarıları okuyun."
+      }
+    ]
+  },
+  {
+    "id": "activities",
+    "title": "Aktivite hazırlayın ve yayımlayın",
+    "category": "Eğitim",
+    "roles": ["staff", "super"],
+    "routes": ["^/admin/activities"],
+    "steps": [
+      {
+        "title": "Çalışmayı hazırlayın",
+        "text": "Başlık, tür, grup ve değerlendirme yöntemini seçin. Açıklama, son teslim ve maksimum puan gibi ek alanları ihtiyaç varsa doldurun."
+      },
+      {
+        "title": "Yayımlayın ve takip edin",
+        "text": "Taslağı kontrol ederek yayımlayın. Öğrenci teslimlerini ayrı bölümde açın. Liste seçimleriyle toplu çoğaltma veya arşivleme yapabilirsiniz."
+      },
+      {
+        "title": "Değerlendirin",
+        "text": "Teslim metnini okuyun, uygun notu ve geri bildirimi girin. Düzeltme gerekiyorsa öğrenciye neyi değiştirmesi gerektiğini açıklayın."
+      }
+    ]
+  },
+  {
+    "id": "finance",
+    "title": "Satış ve tahsilatı takip edin",
+    "category": "Finans",
+    "roles": ["staff", "super"],
+    "routes": [
+      {
+        "pattern": "^/admin/verification-requests(?:/|\\?|$)",
+        "priority": 120
+      },
+      {
+        "pattern": "^/super/expenses(?:/|\\?|$)",
+        "priority": 120
+      },
+      {
+        "pattern": "^/admin/teachers/[^/]+/(?:payments|salary|odeme)(?:\\?|$)",
+        "priority": 130
+      },
+      {
+        "pattern": "^/admin/students/[^/]+/payments\\?(?=[^#]*\\btab=(?:courses|saleHistory|installments)(?:&|$))",
+        "priority": 130
+      },
+      {
+        "pattern": "^/admin/(?:sales|payments|expenses|pricing)(?:/|\\?|$)",
+        "priority": 60
+      },
+      {
+        "pattern": "salary(?:\\?|$)",
+        "priority": 50
+      }
+    ],
+    "steps": [
+      {
+        "title": "İlgili kaydı seçin",
+        "text": "Öğrenci, satış, taksit veya gider kaydını bulun. Tutar ve ödeme durumunu kontrol ederek satırdaki işlem ikonunu kullanın."
+      },
+      {
+        "title": "Ödeme planını kontrol edin",
+        "text": "Satışta eğitim, tutar, indirim ve taksitleri inceleyin. Tahsilatta yöntem, tarih ve gerekiyorsa banka hesabını seçin."
+      },
+      {
+        "title": "Bakiyeyi doğrulayın",
+        "text": "İşlemden sonra satış bakiyesini ve tahsilat geçmişini kontrol edin. Öğrenci eğitim ödemeleri ile şube lisans ödemeleri farklı alanlardır."
+      }
+    ]
+  },
+  {
+    "id": "payment",
+    "title": "Ödeme merkezini kullanın",
+    "category": "Finans",
+    "roles": ["staff", "super", "student", "teacher"],
+    "routes": [
+      {
+        "pattern": "^/payment(?:/|\\?|$)",
+        "priority": 140
+      },
+      {
+        "pattern": "^/super/(?:billing|branches/payments)(?:/|\\?|$)",
+        "priority": 130
+      }
+    ],
+    "steps": [
+      {
+        "title": "Kalemleri seçin",
+        "text": "Ödeme merkezinde açık kalemleri ve toplamı kontrol edin. Ödemek istediklerinizi seçin; devam eden bir işlem varsa önce sonucuna bakın."
+      },
+      {
+        "title": "Adres ve kartı doğrulayın",
+        "text": "Özet, fatura adresi, ödeme yöntemi ve kontrol adımlarını ilerletin. Kayıtlı bilgileri seçebilir veya yeni bilgileri girebilirsiniz."
+      },
+      {
+        "title": "Sonucu takip edin",
+        "text": "Doğrulamadan sonra sonuç ekranını ve geçmişi kontrol edin. Prototipte başarılı, reddedilen ve bekleyen ödeme senaryolarını gerçek tahsilat olmadan deneyebilirsiniz."
+      }
+    ]
+  },
+  {
+    "id": "reports",
+    "title": "Raporu filtreleyin ve dışa aktarın",
+    "category": "Raporlar",
+    "roles": ["staff", "super"],
+    "routes": ["^/admin/(reports|education-reports)"],
+    "steps": [
+      {
+        "title": "Raporu ve dönemi seçin",
+        "text": "İhtiyacınız olan rapor alt sayfasını açın. Tarih aralığı, durum ve ilgili kişi veya eğitim filtrelerini ayarlayın."
+      },
+      {
+        "title": "Tablo ve özeti birlikte okuyun",
+        "text": "Grafik ve toplamları filtrelenen kayıtlarla karşılaştırın. Veri alınamadı mesajını sıfır işlem sonucu olarak yorumlamayın."
+      },
+      {
+        "title": "Çıktıyı hazırlayın",
+        "text": "Sütunları ve sıralamayı düzenleyin. Desteklenen tablolarda seçili veya filtrelenmiş kayıtları Excel, CSV ya da JSON olarak indirin."
+      }
+    ]
+  },
+  {
+    "id": "communication",
+    "title": "Mesajı kontrol ederek hazırlayın",
+    "category": "İletişim",
+    "roles": ["staff", "super"],
+    "routes": ["^/admin/(sms|email|whatsapp)"],
+    "steps": [
+      {
+        "title": "Kanal ve alıcıyı seçin",
+        "text": "SMS, e-posta veya WhatsApp alanını açın. Tekil veya toplu alıcı seçin; iletişim bilgisinin geçerli olduğunu kontrol edin."
+      },
+      {
+        "title": "İçeriği önizleyin",
+        "text": "Başlık ve mesajı doldurun veya şablondan başlayın. Önizlemede alıcı sayısını, tekrar eden adresleri ve tam içeriği inceleyin."
+      },
+      {
+        "title": "Geçmişi kontrol edin",
+        "text": "Prototipte gönderim denemesi yerel geçmişe kaydedilir; dışarıya mesaj gönderilmez. Daha sonra taslağı veya konuşma geçmişini açabilirsiniz."
+      }
+    ]
+  },
+  {
+    "id": "team",
+    "title": "Personel ve izinleri düzenleyin",
+    "category": "Yönetim",
+    "roles": ["staff", "super"],
+    "routes": ["^/(admin|super)/(staff|users)"],
+    "steps": [
+      {
+        "title": "Personeli seçin",
+        "text": "Listeden personel detayını açın. Kişisel ve iletişim bilgilerini kontrol edin; gerekli alanları düzenleyin."
+      },
+      {
+        "title": "Şube ve rolü belirleyin",
+        "text": "Erişilebilir şubeleri ve rol şablonunu inceleyin. Özel izinlerde hangi kaynağa hangi işlemin verildiğini kontrol edin."
+      },
+      {
+        "title": "Yetkiyi gözden geçirin",
+        "text": "Görüntüleme, oluşturma, düzenleme ve silme ayrı işlemlerdir. Prototip izin görünümü sunar; canlı yetki denetimi sunucuda uygulanmalıdır."
+      }
+    ]
+  },
+  {
+    "id": "branches",
+    "title": "Şube bağlamını doğru seçin",
+    "category": "Yönetim",
+    "roles": ["staff", "super"],
+    "routes": ["^/super/branches", "^/branch-selection$"],
+    "steps": [
+      {
+        "title": "Şubeyi bulun",
+        "text": "Şube seçimi veya yönetim listesinden kurumunuzu bulun. Adres ve durum bilgisini kontrol edin."
+      },
+      {
+        "title": "Bilgileri düzenleyin",
+        "text": "Şube detayında iletişim ve yönetim alanlarını inceleyin. Değiştirdiğiniz bilgileri kaydetmeden önce kontrol edin."
+      },
+      {
+        "title": "Doğru alanda çalışın",
+        "text": "Çalışma alanı başlığında seçili şubeyi doğrulayın. Askıya alınmış şubede açıklanan ödeme veya destek adımını izleyin."
+      }
+    ]
+  },
+  {
+    "id": "settings",
+    "title": "Tercihleri ve ayarları güncelleyin",
+    "category": "Yönetim",
+    "roles": ["student", "teacher", "staff", "super"],
+    "routes": ["^/(admin|super)/settings", "^/user/account"],
+    "steps": [
+      {
+        "title": "Ayar bölümünü seçin",
+        "text": "Hesap tercihleri ile kurum ve entegrasyon ayarlarını ayırın. Yalnız rolünüzün ilgili olduğu alanı düzenleyin."
+      },
+      {
+        "title": "Alanları kontrol edin",
+        "text": "Telefon, adres ve banka bilgilerini doğru biçimde girin. Zorunlu alanlar üstte, ek tercihler alttadır; hata mesajlarını tamamlayın."
+      },
+      {
+        "title": "Kaydı doğrulayın",
+        "text": "Tercihleri kaydedin ve görünümdeki etkisini kontrol edin. Prototipte entegrasyon taslağı kaydetmek canlı servis bağlantısı kurmaz."
+      }
+    ]
+  },
+  {
+    "id": "files",
+    "title": "Dosyaları ekleyin ve indirin",
+    "category": "Yönetim",
+    "roles": ["staff", "super"],
+    "routes": [
+      {
+        "pattern": "^/admin/files(?:/|\\?|$)",
+        "priority": 100
+      },
+      {
+        "pattern": "^/super/files(?:/|\\?|$)",
+        "priority": 120
+      }
+    ],
+    "steps": [
+      {
+        "title": "Dosyayı seçin",
+        "text": "Dosya alanında yeni çalışma dosyanızı seçin. Desteklenen dosya türünü ve boyut sınırını kontrol edin."
+      },
+      {
+        "title": "Kaydı inceleyin",
+        "text": "Eklenen dosyanın adını ve boyutunu listede doğrulayın. Öğrenciye bağlı sözleşme için öğrencinin belge bölümünü kullanın."
+      },
+      {
+        "title": "Çalışmanızı paylaşın",
+        "text": "İndir düğmesiyle dosyayı alın. Prototip dosyaları bu tarayıcıda tutar; farklı cihazlara otomatik olarak aktarmaz."
+      }
+    ]
+  },
+  {
+    "id": "announcements",
+    "title": "Duyuru hazırlayın",
+    "category": "İletişim",
+    "roles": ["staff", "super"],
+    "routes": ["^/admin/announcements"],
+    "steps": [
+      {
+        "title": "Başlığı ve kitleyi belirleyin",
+        "text": "Yeni duyuruda konu başlığını ve hedef kitlesini seçin. Mesajı yalnız ilgili kişilere yönelik hazırlayın."
+      },
+      {
+        "title": "İçeriği kontrol edin",
+        "text": "Duyuru metnini ve yayın durumunu kontrol edin. Tarih, saat ve yer gibi bilgilerin anlaşılır olduğundan emin olun."
+      },
+      {
+        "title": "Yayını takip edin",
+        "text": "Kaydettiğiniz duyuruyu listede kontrol edin. Öğrenci ve öğretmen portallarında yalnız ilgili gruplara ait yayınlar görünür."
+      }
+    ]
+  },
+  {
+    "id": "automations",
+    "title": "Otomasyon kuralını hazırlayın",
+    "category": "Yönetim",
+    "roles": ["staff", "super"],
+    "routes": ["^/admin/automations"],
+    "steps": [
+      {
+        "title": "Kuralı tanımlayın",
+        "text": "Otomasyonun adını ve hangi olay için kullanılacağını belirleyin. Mevcut kuralları kontrol ederek tekrar oluşturmayın."
+      },
+      {
+        "title": "Koşulları inceleyin",
+        "text": "Hedef kitle, zamanlama ve aksiyon alanlarını doldurun. Aktif veya pasif durumunu kaydetmeden önce kontrol edin."
+      },
+      {
+        "title": "Taslağı doğrulayın",
+        "text": "Kural detayında seçtiğiniz koşulları okuyun. Prototipte kurallar saklanır; arka planda gerçek zamanlanmış mesaj gönderimi çalışmaz."
+      }
+    ]
+  },
+  {
+    "id": "contracts",
+    "title": "Sözleşmeyi hazırlayın",
+    "category": "Finans",
+    "roles": ["staff", "super"],
+    "routes": ["^/admin/contracts"],
+    "steps": [
+      {
+        "title": "Sözleşmeyi seçin",
+        "text": "Mevcut sözleşmeyi açın veya yeni kayıt başlatın. Başlık ve ilişkilendirilen bilgileri kontrol edin."
+      },
+      {
+        "title": "Metni gözden geçirin",
+        "text": "Sözleşme içeriğini ve alanlarını düzenleyin. Metindeki kişi, eğitim ve tutar bilgilerini kaynak kayıtlarla karşılaştırın."
+      },
+      {
+        "title": "Önizleyin",
+        "text": "Kaydetmeden veya indirmeden önce metnin son halini inceleyin. İmzalı dosyalar öğrencinin belge bölümünden yönetilir."
+      }
+    ]
+  },
+  {
+    "id": "notifications",
+    "title": "Bildirimlerinizi takip edin",
+    "category": "Başlangıç",
+    "roles": ["student", "teacher", "staff", "super"],
+    "routes": ["^/user/notifications$"],
+    "steps": [
+      {
+        "title": "Güncel bildirimleri açın",
+        "text": "Üstteki zil ikonunu veya bildirimler sayfasını kullanın. Okunmamış kayıtları ve tarihlerini inceleyin."
+      },
+      {
+        "title": "İlgili kayda gidin",
+        "text": "Arama ve tür filtreleriyle bildirimi bulun. İlgili sayfa bağlantısını açın veya kaydı okundu olarak işaretleyin."
+      },
+      {
+        "title": "Tercihleri düzenleyin",
+        "text": "Hesap ayarlarından bildirim kategorilerini seçin. Prototipte bu tercihler uygulama içindeki görünümü düzenler."
+      }
+    ]
+  },
+  {
+    "id": "student-overview",
+    "title": "Öğrenci portalını tanıyın",
+    "category": "Öğrenci",
+    "roles": ["student"],
+    "routes": ["^/student/dashboard$", "^/student/announcements$"],
+    "steps": [
+      {
+        "title": "Genel bakışı açın",
+        "text": "Portalda derslerinizi, güncel çalışmalarınızı ve not durumunuzu inceleyin. Üstteki bağlantılarla ilgili bölüme geçin."
+      },
+      {
+        "title": "Ders ve duyuruları takip edin",
+        "text": "Size atanmış dersleri ve grubunuza yayımlanan duyuruları kontrol edin. Kayıt görünmüyorsa kurum yetkilinizden atamayı doğrulamasını isteyin."
+      },
+      {
+        "title": "Yardımı açın",
+        "text": "Sayfa başlığındaki oynat ikonuyla ilgili rehberi izleyin. Yardım merkezinde yalnız öğrenci kullanımına uygun videoları bulabilirsiniz."
+      }
+    ]
+  },
+  {
+    "id": "student-courses",
+    "title": "Derslerinizi inceleyin",
+    "category": "Öğrenci",
+    "roles": ["student"],
+    "routes": ["^/student/courses"],
+    "steps": [
+      {
+        "title": "Ders kartını açın",
+        "text": "Derslerim bölümünde atanmış gruplarınızı görün. İlgili dersin detay bağlantısını açın."
+      },
+      {
+        "title": "Programı kontrol edin",
+        "text": "Öğretmen, derslik ve program bilgisini inceleyin. Gün veya saat değişikliği konusunda kurumunuzun duyurularını takip edin."
+      },
+      {
+        "title": "Çalışmalara geçin",
+        "text": "Aktiviteler bölümünden ilgili dersin yayımlanmış ödevlerini açın. Ders görünmüyorsa yardım merkezindeki erişim rehberini kullanın."
+      }
+    ]
+  },
+  {
+    "id": "student-work",
+    "title": "Çalışmanızı teslim edin",
+    "category": "Öğrenci",
+    "roles": ["student"],
+    "routes": ["^/student/activities"],
+    "steps": [
+      {
+        "title": "Yönergeyi okuyun",
+        "text": "Aktiviteyi açın; açıklamayı, teslim tarihini ve geç teslim durumunu kontrol edin."
+      },
+      {
+        "title": "Çalışmanızı gönderin",
+        "text": "Metninizi teslim alanına yazın. İçeriği gözden geçirerek Çalışmayı teslim et düğmesine basın ve durum mesajını okuyun."
+      },
+      {
+        "title": "Geri bildirimi takip edin",
+        "text": "Öğretmeniniz düzeltme isterse aynı çalışmayı güncelleyip tekrar teslim edin. Değerlendirme sonrası notunuz ve geri bildiriminiz burada görünür."
+      }
+    ]
+  },
+  {
+    "id": "student-grades",
+    "title": "Not ve geri bildiriminizi okuyun",
+    "category": "Öğrenci",
+    "roles": ["student"],
+    "routes": ["^/student/grades"],
+    "steps": [
+      {
+        "title": "Notlarım bölümünü açın",
+        "text": "Değerlendirilmiş çalışmalarınızı listede bulun. Notlandırma yöntemine göre puan, harf veya sonuç gösterilir."
+      },
+      {
+        "title": "Çalışma detayını inceleyin",
+        "text": "İlgili aktiviteyi açarak öğretmen geri bildirimini okuyun. Henüz not verilmemiş teslimleri sıfır puan olarak yorumlamayın."
+      },
+      {
+        "title": "Gerekli düzeltmeyi yapın",
+        "text": "Düzeltme istenen çalışmaya geri dönün. Öğretmenin açıklamasına göre metni güncelleyin ve yeniden teslim edin."
+      }
+    ]
+  },
+  {
+    "id": "teacher-overview",
+    "title": "Öğretmen portalını tanıyın",
+    "category": "Öğretmen",
+    "roles": ["teacher"],
+    "routes": ["^/teacher/dashboard$"],
+    "steps": [
+      {
+        "title": "Genel bakışı inceleyin",
+        "text": "Atanmış derslerinizi, güncel çalışmalarınızı ve değerlendirmeleri portalın genel bakış ekranından takip edin."
+      },
+      {
+        "title": "Doğru grupta çalışın",
+        "text": "Derslerim alanında öğretmen olarak atandığınız grupları açın. Öğrenci listesini ve programı kontrol edin."
+      },
+      {
+        "title": "Çalışma ve duyuruları yönetin",
+        "text": "Aktivitelerden teslimleri değerlendirin; Duyurular bölümünden ilgili gruba bilgi verin. Sayfa başlığındaki video rehberinden yardım alın."
+      }
+    ]
+  },
+  {
+    "id": "teacher-courses",
+    "title": "Ders ve öğrencilerinizi takip edin",
+    "category": "Öğretmen",
+    "roles": ["teacher"],
+    "routes": ["^/teacher/courses"],
+    "steps": [
+      {
+        "title": "Atanmış dersi açın",
+        "text": "Derslerim listesinden ilgili grubun detayına girin. Yalnız size atanmış gruplar görüntülenir."
+      },
+      {
+        "title": "Program ve öğrencileri kontrol edin",
+        "text": "Derslik, program ve öğrenci listesini inceleyin. Eksik atama için kurum yetkilinizle iletişime geçin."
+      },
+      {
+        "title": "Grubun çalışmalarını açın",
+        "text": "Aktiviteler bölümünde aynı grubun çalışmasını seçin. İşlem yapmadan önce grup adını ve çalışmanın durumunu doğrulayın."
+      }
+    ]
+  },
+  {
+    "id": "teacher-work",
+    "title": "Teslimleri değerlendirin",
+    "category": "Öğretmen",
+    "roles": ["teacher"],
+    "routes": ["^/teacher/activities"],
+    "steps": [
+      {
+        "title": "Çalışmayı ve teslimi seçin",
+        "text": "Aktivite detayından Teslimler bölümüne geçin. Öğrencinin metnini ve teslim durumunu okuyun."
+      },
+      {
+        "title": "Not ve geri bildirim girin",
+        "text": "Puan, harf veya geçti-kaldı sonucunu uygun alana girin. Öğrenciye geri bildiriminizi yazın; özel öğretmen notu öğrenciye gösterilmez."
+      },
+      {
+        "title": "Kaydedin veya düzeltme isteyin",
+        "text": "Notu kaydedebilir ya da açıklamayla düzeltme isteyebilirsiniz. Öğrenci yeniden teslim ettiğinde aynı kayıt üzerinden devam edin."
+      }
+    ]
+  },
+  {
+    "id": "teacher-grades",
+    "title": "Not özetini inceleyin",
+    "category": "Öğretmen",
+    "roles": ["teacher"],
+    "routes": ["^/teacher/grade-overview"],
+    "steps": [
+      {
+        "title": "Değerlendirmeleri açın",
+        "text": "Not özeti bölümünde atanmış gruplarınızın değerlendirilmiş çalışmalarını bulun."
+      },
+      {
+        "title": "Sonuçları karşılaştırın",
+        "text": "Öğrenci, çalışma, not ve geri bildirim alanlarını inceleyin. Henüz değerlendirilmemiş teslimleri ayrı takip edin."
+      },
+      {
+        "title": "Çalışmaya geri dönün",
+        "text": "Satırdaki detay ikonuyla aktiviteyi açın. Gerekirse teslimi yeniden değerlendirerek geri bildirimi güncelleyin."
+      }
+    ]
+  },
+  {
+    "id": "teacher-announcements",
+    "title": "Grubunuza duyuru yayımlayın",
+    "category": "Öğretmen",
+    "roles": ["teacher"],
+    "routes": ["^/teacher/announcements"],
+    "steps": [
+      {
+        "title": "Yeni duyuru başlatın",
+        "text": "Duyurular bölümünde Yeni duyuru düğmesini kullanın. Öğretmen olarak atandığınız gruplardan hedefi seçin."
+      },
+      {
+        "title": "Mesajı hazırlayın",
+        "text": "Anlaşılır bir başlık ve duyuru metni yazın. Tarih, saat ve dersle ilgili bilgileri kontrol edin."
+      },
+      {
+        "title": "Yayımlayın",
+        "text": "Yayımla düğmesiyle kaydedin. Duyuru seçtiğiniz grubun öğrenci portalında görünür; hedef grubun doğru olduğundan emin olun."
+      }
+    ]
+  },
+  {
+    "id": "support",
+    "title": "Yardım merkezini kullanın",
+    "category": "Başlangıç",
+    "roles": ["student", "teacher", "staff", "super"],
+    "routes": ["^/help$", "/support$"],
+    "steps": [
+      {
+        "title": "İlgili rehberi bulun",
+        "text": "Sidebar altındaki Yardım merkezi düğmesini açın. Portalda Yardım bağlantısını kullanın. İçerikler bulunduğunuz role göre seçilir."
+      },
+      {
+        "title": "İzleyin veya okuyun",
+        "text": "Konuya göre arayın ve videoyu açın. Oynatma, duraklatma, bölüm seçimi ve tam ekran kontrollerini kullanın; yazılı adımlar da yanındadır."
+      },
+      {
+        "title": "Sayfanıza geri dönün",
+        "text": "Video dialogunu kapattığınızda çalıştığınız sayfa değişmez. İhtiyaç devam ederse destek talebinizi hazırlayın; prototipte dışarıya gönderilmez."
+      }
+    ]
+  }
+]

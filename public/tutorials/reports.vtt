@@ -1,0 +1,16 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.000
+Raporu ve dönemi seçin.
+İhtiyacınız olan rapor alt sayfasını açın. Tarih aralığı, durum ve ilgili kişi veya eğitim filtrelerini ayarlayın.
+
+2
+00:00:08.000 --> 00:00:16.000
+Tablo ve özeti birlikte okuyun.
+Grafik ve toplamları filtrelenen kayıtlarla karşılaştırın. Veri alınamadı mesajını sıfır işlem sonucu olarak yorumlamayın.
+
+3
+00:00:16.000 --> 00:00:24.000
+Çıktıyı hazırlayın.
+Sütunları ve sıralamayı düzenleyin. Desteklenen tablolarda seçili veya filtrelenmiş kayıtları Excel, CSV ya da JSON olarak indirin.

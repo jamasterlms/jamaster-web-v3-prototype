@@ -1,0 +1,16 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:08.000
+Kuralı tanımlayın.
+Otomasyonun adını ve hangi olay için kullanılacağını belirleyin. Mevcut kuralları kontrol ederek tekrar oluşturmayın.
+
+2
+00:00:08.000 --> 00:00:16.000
+Koşulları inceleyin.
+Hedef kitle, zamanlama ve aksiyon alanlarını doldurun. Aktif veya pasif durumunu kaydetmeden önce kontrol edin.
+
+3
+00:00:16.000 --> 00:00:24.000
+Taslağı doğrulayın.
+Kural detayında seçtiğiniz koşulları okuyun. Prototipte kurallar saklanır; arka planda gerçek zamanlanmış mesaj gönderimi çalışmaz.

@@ -1,0 +1,695 @@
+[
+  {
+    "label": "Genel",
+    "items": [
+      {
+        "label": "Panel",
+        "path": "/admin/dashboard",
+        "icon": "LayoutDashboard",
+        "children": []
+      },
+      {
+        "label": "Takvim",
+        "path": "/admin/calendar",
+        "icon": "CalendarRange",
+        "children": [
+          {
+            "label": "Yoklamalar",
+            "path": "/admin/calendar/pollings"
+          }
+        ]
+      },
+      {
+        "label": "Görüşmeler",
+        "path": "/admin/reports/meetings?startDate=YYYY-MM-01&endDate=YYYY-MM-DD&dateField=meetingDate&meetingDateResultStatus=pending",
+        "icon": "Handshake",
+        "children": []
+      }
+    ]
+  },
+  {
+    "label": "Eğitim",
+    "items": [
+      {
+        "label": "Öğrenciler",
+        "path": "/admin/students",
+        "icon": "Users",
+        "children": [
+          {
+            "label": "Kayıt",
+            "path": "/admin/students/register"
+          },
+          {
+            "label": "Potansiyel Öğrenciler",
+            "path": "/admin/students/potential"
+          }
+        ]
+      },
+      {
+        "label": "Gruplar",
+        "path": "/admin/groups",
+        "icon": "Group",
+        "children": [
+          {
+            "label": "Oluştur",
+            "path": "/admin/groups/form"
+          }
+        ]
+      },
+      {
+        "label": "Öğretmenler",
+        "path": "/admin/teachers",
+        "icon": "User",
+        "children": [
+          {
+            "label": "Oluştur",
+            "path": "/admin/teachers/form"
+          },
+          {
+            "label": "Maaş hareketleri",
+            "path": "/admin/teachers/salary"
+          }
+        ]
+      },
+      {
+        "label": "Eğitimler",
+        "path": "/admin/education",
+        "icon": "BookOpen",
+        "children": []
+      },
+      {
+        "label": "Dönemler",
+        "path": "/admin/education/period",
+        "icon": "CalendarClock",
+        "children": []
+      },
+      {
+        "label": "Programlar",
+        "icon": "Layers",
+        "path": "/admin/programs"
+      },
+      {
+        "label": "Program Dönemleri",
+        "path": "/admin/program-terms",
+        "icon": "CalendarDays",
+        "children": []
+      },
+      {
+        "label": "Müfredat Birimleri",
+        "path": "/admin/curriculum-units",
+        "icon": "BookText",
+        "children": []
+      },
+      {
+        "label": "Aktiviteler",
+        "icon": "ClipboardList",
+        "path": "/admin/activities"
+      },
+      {
+        "label": "Eğitim Raporları",
+        "path": "/admin/education-reports",
+        "icon": "BookOpen",
+        "children": [
+          {
+            "label": "Panel",
+            "path": "/admin/education-reports"
+          },
+          {
+            "label": "Görüşmeler",
+            "path": "/admin/education-reports/meetings"
+          },
+          {
+            "label": "Aktif Öğrenciler",
+            "path": "/admin/education-reports/active-students"
+          },
+          {
+            "label": "Aktif ve Grupsuz Öğrenciler",
+            "path": "/admin/education-reports/active-unassigned-students"
+          },
+          {
+            "label": "Dondurulmuş Öğrenciler",
+            "path": "/admin/education-reports/frozen-students"
+          },
+          {
+            "label": "Eğitimi Bitmek Üzere Olanlar",
+            "path": "/admin/education-reports/ending-soon-students"
+          },
+          {
+            "label": "Bonus Kullanan Öğrenciler",
+            "path": "/admin/education-reports/bonus-used-students"
+          },
+          {
+            "label": "Bonus Kalan Risk",
+            "path": "/admin/education-reports/bonus-remaining-risk"
+          },
+          {
+            "label": "Eğitim Durumu Dağılımı",
+            "path": "/admin/education-reports/education-status-distribution"
+          },
+          {
+            "label": "Devam Riski Öğrencileri",
+            "path": "/admin/education-reports/attendance-risk-students"
+          },
+          {
+            "label": "Devam Trendi",
+            "path": "/admin/education-reports/attendance-trend"
+          },
+          {
+            "label": "Son Dönemde Katılmayanlar",
+            "path": "/admin/education-reports/no-attendance-recently"
+          },
+          {
+            "label": "Grup Atama Yükü",
+            "path": "/admin/education-reports/group-assignment-load"
+          },
+          {
+            "label": "Grup Değişim Geçmişi",
+            "path": "/admin/education-reports/group-switch-history"
+          },
+          {
+            "label": "Transfer Olan Öğrenciler",
+            "path": "/admin/education-reports/transfer-out-students"
+          },
+          {
+            "label": "Yeniden Aktifleştirme Adayları",
+            "path": "/admin/education-reports/reactivation-candidates"
+          },
+          {
+            "label": "Son Dönemde Görüşmesi Olmayanlar",
+            "path": "/admin/education-reports/no-meeting-recently"
+          },
+          {
+            "label": "Düşük Devam Yüksek Kalan",
+            "path": "/admin/education-reports/low-attendance-high-remaining"
+          },
+          {
+            "label": "Hiç Katılmamış Öğrenciler",
+            "path": "/admin/education-reports/never-attended-students"
+          },
+          {
+            "label": "Bonusu Sıfırlananlar",
+            "path": "/admin/education-reports/zero-bonus-remaining"
+          },
+          {
+            "label": "Uzun Süre Dondurulanlar",
+            "path": "/admin/education-reports/long-freeze-students"
+          },
+          {
+            "label": "Hiç Grup Atanmayanlar",
+            "path": "/admin/education-reports/never-group-assigned"
+          },
+          {
+            "label": "Yüksek Devamlı Öğrenciler",
+            "path": "/admin/education-reports/high-attendance-students"
+          },
+          {
+            "label": "Yoğun Görüşmeli Öğrenciler",
+            "path": "/admin/education-reports/meeting-intensive-students"
+          },
+          {
+            "label": "Danışmansız Öğrenciler",
+            "path": "/admin/education-reports/no-advisor-students"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Finans",
+    "items": [
+      {
+        "label": "Muhasebe",
+        "path": "/admin/expenses",
+        "icon": "Receipt",
+        "children": [
+          {
+            "label": "Oluştur",
+            "path": "/admin/expenses/form"
+          }
+        ]
+      },
+      {
+        "label": "Fiyatlandırma",
+        "path": "/admin/pricing",
+        "icon": "DollarSign",
+        "children": [
+          {
+            "label": "Oluştur",
+            "path": "/admin/pricing/create"
+          }
+        ]
+      },
+      {
+        "label": "Satış Raporlar",
+        "path": "/admin/reports",
+        "icon": "ClipboardPlus",
+        "children": [
+          {
+            "label": "Raporlar",
+            "path": "/admin/reports"
+          },
+          {
+            "label": "Satış Raporu",
+            "path": "/admin/reports/sales"
+          },
+          {
+            "label": "Görüşme Raporu",
+            "path": "/admin/reports/meetings"
+          },
+          {
+            "label": "Tahsilat Raporu",
+            "path": "/admin/reports/collections"
+          },
+          {
+            "label": "Senet Raporu",
+            "path": "/admin/reports/bills"
+          },
+          {
+            "label": "Vadesi Geçmiş Alacaklar",
+            "path": "/admin/reports/overdue-receivables"
+          },
+          {
+            "label": "Muhasebe",
+            "path": "/admin/reports/accounting"
+          },
+          {
+            "label": "Danışmana Göre Satışlar",
+            "path": "/admin/reports/sales-by-advisor"
+          },
+          {
+            "label": "Dönüşüm Hunisi",
+            "path": "/admin/reports/conversion-funnel"
+          },
+          {
+            "label": "Ödeme Yöntemi Performansı",
+            "path": "/admin/reports/payment-method-performance"
+          },
+          {
+            "label": "Taksit Riski",
+            "path": "/admin/reports/installment-risk"
+          },
+          {
+            "label": "İndirim Etkisi",
+            "path": "/admin/reports/discount-impact"
+          },
+          {
+            "label": "Yüksek İndirimli Satışlar",
+            "path": "/admin/reports/high-discount-sales"
+          },
+          {
+            "label": "Yüksek Kalan Bakiyeler",
+            "path": "/admin/reports/unpaid-balance-heavy"
+          },
+          {
+            "label": "Bekleyen Satışlar",
+            "path": "/admin/reports/pending-sales"
+          },
+          {
+            "label": "Tamamlanan Satışlar",
+            "path": "/admin/reports/completed-sales"
+          },
+          {
+            "label": "İptal Satışlar",
+            "path": "/admin/reports/cancelled-sales"
+          },
+          {
+            "label": "İade Satışlar",
+            "path": "/admin/reports/refunded-sales"
+          },
+          {
+            "label": "İndirimsiz Satışlar",
+            "path": "/admin/reports/no-discount-sales"
+          },
+          {
+            "label": "Yakında Bitecek Satışlar",
+            "path": "/admin/reports/expiring-soon-sales"
+          },
+          {
+            "label": "Danışman Gelir Riski",
+            "path": "/admin/reports/advisor-revenue-risk"
+          },
+          {
+            "label": "İptal ve İade Analizi",
+            "path": "/admin/reports/cancellation-refund-analysis"
+          },
+          {
+            "label": "Fiyat/Paket Performansı",
+            "path": "/admin/reports/pricing-package-performance"
+          },
+          {
+            "label": "Gelir Tahmin Trendi",
+            "path": "/admin/reports/revenue-forecast-trend"
+          },
+          {
+            "label": "Sözleşme Bitiş Gelir Riski",
+            "path": "/admin/reports/contract-expiry-revenue-risk"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "İletişim",
+    "items": [
+      {
+        "label": "SMS",
+        "path": "/admin/sms",
+        "icon": "MessageCircle",
+        "children": [
+          {
+            "label": "Oluştur",
+            "path": "/admin/sms/create"
+          },
+          {
+            "label": "Şablonlar",
+            "path": "/admin/sms/templates"
+          }
+        ]
+      },
+      {
+        "label": "Email",
+        "path": "/admin/email",
+        "icon": "Mail",
+        "children": [
+          {
+            "label": "Oluştur",
+            "path": "/admin/email/create"
+          },
+          {
+            "label": "Şablonlar",
+            "path": "/admin/email/templates"
+          },
+          {
+            "label": "Şablon Oluştur",
+            "path": "/admin/email/templates/create"
+          }
+        ]
+      },
+      {
+        "label": "WhatsApp",
+        "path": "/admin/whatsapp",
+        "icon": "FaWhatsapp",
+        "badge": "Yakında",
+        "children": [
+          {
+            "label": "Oluştur",
+            "path": "/admin/whatsapp/create",
+            "badge": "Yakında"
+          },
+          {
+            "label": "Şablonlar",
+            "path": "/admin/whatsapp/templates",
+            "badge": "Yakında"
+          }
+        ]
+      },
+      {
+        "label": "Duyurular",
+        "path": "/admin/announcements",
+        "icon": "Megaphone",
+        "children": []
+      }
+    ]
+  },
+  {
+    "label": "Yönetim",
+    "items": [
+      {
+        "label": "Ödemeler",
+        "path": "/payment",
+        "icon": "CreditCard",
+        "children": [
+          {
+            "label": "Güncel Ödeme",
+            "path": "/payment"
+          },
+          {
+            "label": "Geçmiş",
+            "path": "/payment?tab=history"
+          },
+          {
+            "label": "Taksitler",
+            "path": "/admin/payments/installments"
+          }
+        ]
+      },
+      {
+        "label": "Doğrulamalar",
+        "path": "/admin/verification-requests",
+        "icon": "ShieldCheck",
+        "children": [
+          {
+            "label": "Satış Doğrulaması",
+            "path": "/admin/verification-requests"
+          },
+          {
+            "label": "Senet Doğrulaması",
+            "path": "/admin/verification-requests/installments"
+          },
+          {
+            "label": "Görüşme Doğrulaması",
+            "path": "/admin/verification-requests/meetings"
+          }
+        ]
+      },
+      {
+        "label": "Personeller",
+        "path": "/admin/staff",
+        "icon": "Users",
+        "children": [
+          {
+            "label": "Oluştur",
+            "path": "/admin/staff/form"
+          },
+          {
+            "label": "Maaş hareketleri",
+            "path": "/admin/staff/salary"
+          }
+        ]
+      },
+      {
+        "label": "Sözleşmeler",
+        "path": "/admin/contracts",
+        "icon": "File",
+        "children": [
+          {
+            "label": "Oluştur",
+            "path": "/admin/contracts/form"
+          }
+        ]
+      },
+      {
+        "label": "Otomasyonlar",
+        "path": "/admin/automations",
+        "icon": "Zap",
+        "children": [
+          {
+            "label": "Oluştur",
+            "path": "/admin/automations/create"
+          }
+        ]
+      },
+      {
+        "label": "Ayarlar",
+        "path": "/admin/settings",
+        "icon": "Settings2",
+        "children": [
+          {
+            "label": "Genel",
+            "path": "/admin/settings/general"
+          },
+          {
+            "label": "Banka Ayarları",
+            "path": "/admin/settings/bank"
+          },
+          {
+            "label": "SMS",
+            "path": "/admin/settings/sms"
+          },
+          {
+            "label": "Email",
+            "path": "/admin/settings/email"
+          },
+          {
+            "label": "WhatsApp",
+            "path": "/admin/settings/whatsapp"
+          },
+          {
+            "label": "Ödeme",
+            "path": "/admin/settings/payment"
+          },
+          {
+            "label": "Entegrasyonlar",
+            "path": "/admin/settings/integrations"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "label": "Süper Admin",
+    "items": [
+      {
+        "label": "Faturalandırma",
+        "path": "/payment",
+        "icon": "CreditCard",
+        "children": [
+          {
+            "label": "Geçmiş",
+            "path": "/payment?tab=history"
+          },
+          {
+            "label": "Kartlar",
+            "path": "/payment?tab=cards"
+          }
+        ]
+      },
+      {
+        "label": "Şubeler",
+        "path": "/super/branches",
+        "icon": "Building2",
+        "children": [
+          {
+            "label": "Oluştur",
+            "path": "/super/branches/form"
+          },
+          {
+            "label": "Ödemeler",
+            "path": "/super/branches/payments"
+          }
+        ]
+      },
+      {
+        "label": "Kullanıcılar",
+        "path": "/super/users",
+        "icon": "Users",
+        "children": [
+          {
+            "label": "Oluştur",
+            "path": "/super/users/form"
+          }
+        ]
+      },
+      {
+        "label": "Muhasebe",
+        "path": "/super/expenses",
+        "icon": "Receipt",
+        "children": [
+          {
+            "label": "Oluştur",
+            "path": "/super/expenses/form"
+          }
+        ]
+      },
+      {
+        "label": "Dosya Yönetimi",
+        "path": "/super/files",
+        "icon": "File",
+        "children": []
+      },
+      {
+        "label": "Ayarlar",
+        "path": "/super/settings",
+        "icon": "Settings2",
+        "children": []
+      }
+    ]
+  },
+  {
+    "label": "Uygulama ekranları",
+    "items": [
+      {
+        "label": "Öğrenci alanı",
+        "path": "/student/dashboard",
+        "icon": "GraduationCap",
+        "children": [
+          {
+            "label": "Öğrenci girişi",
+            "path": "/login?role=student"
+          },
+          {
+            "label": "Derslerim",
+            "path": "/student/courses"
+          },
+          {
+            "label": "Aktiviteler",
+            "path": "/student/activities"
+          },
+          {
+            "label": "Notlarım",
+            "path": "/student/grades"
+          }
+        ]
+      },
+      {
+        "label": "Öğretmen alanı",
+        "path": "/teacher/dashboard",
+        "icon": "BookOpen",
+        "children": [
+          {
+            "label": "Öğretmen girişi",
+            "path": "/login?role=teacher"
+          },
+          {
+            "label": "Derslerim",
+            "path": "/teacher/courses"
+          },
+          {
+            "label": "Aktiviteler",
+            "path": "/teacher/activities"
+          },
+          {
+            "label": "Not özeti",
+            "path": "/teacher/grade-overview"
+          }
+        ]
+      },
+      {
+        "label": "Giriş ekranları",
+        "path": "/login?role=user",
+        "icon": "LockKeyhole",
+        "children": [
+          {
+            "label": "Şifremi unuttum",
+            "path": "/forgot-password?role=user"
+          },
+          {
+            "label": "Yeni şifre belirle",
+            "path": "/reset-password?token=prototype&role=user"
+          }
+        ]
+      },
+      {
+        "label": "Hata ve yetki ekranları",
+        "path": "/access/examples?role=user",
+        "icon": "ShieldCheck",
+        "children": [
+          {
+            "label": "Oturum sona erdi",
+            "path": "/access/session-expired?role=user"
+          },
+          {
+            "label": "Yetkisiz erişim",
+            "path": "/access/forbidden?role=user"
+          },
+          {
+            "label": "Hesap onayı",
+            "path": "/access/pending?role=user"
+          },
+          {
+            "label": "Bağlantı hatası",
+            "path": "/access/offline?role=user"
+          },
+          {
+            "label": "Bakım ekranı",
+            "path": "/access/maintenance?role=user"
+          },
+          {
+            "label": "İçerik bulunamadı",
+            "path": "/access/not-found?role=user"
+          }
+        ]
+      }
+    ]
+  }
+]
