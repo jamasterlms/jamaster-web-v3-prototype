@@ -17,7 +17,7 @@ export function Sparkline({ bars = false }: { bars?: boolean }) {
             width="3"
             height={v}
             rx="1"
-            fill="#8d761c"
+            fill="#85718f"
             opacity={0.25 + i * 0.05}
           />
         ))
@@ -156,7 +156,7 @@ export function PerformanceChart() {
                 {Array.from({ length: 100 }, (_, j) => {
                   const row = Math.floor(j / 5),
                     active = row >= 20 - height;
-                  return <i key={j} className={`dot ${active ? 'yellow-dot' : ''}`} />;
+                  return <i key={j} className={`dot ${active ? 'lilac-dot' : ''}`} />;
                 })}
               </span>
               <span className="chart-day-label">{labels[i]}</span>
@@ -170,7 +170,7 @@ export function PerformanceChart() {
       </div>
       <div className="chart-legend">
         <span>
-          <i className="legend-mark" style={{ background: 'var(--chart-yellow)' }} />
+          <i className="legend-mark" style={{ background: 'var(--chart-lilac)' }} />
           Yeni öğrenci kayıtları
         </span>
       </div>

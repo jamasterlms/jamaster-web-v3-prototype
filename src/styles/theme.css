@@ -57,8 +57,8 @@
   --soft: var(--muted);
   --plum: var(--primary);
   --mint: #0da992;
-  --highlight: #ffdb39;
-  --highlight-foreground: #655219;
+  --highlight: #f7f6f8;
+  --highlight-foreground: var(--foreground);
   --chart-yellow: #f4c839;
   --chart-mint: #2ec1ac;
   --chart-lilac: #c5afd9;
